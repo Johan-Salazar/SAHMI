@@ -1,247 +1,157 @@
-/* Estilos generales */
+/* BARRA DE NAVEGACION*/
+    /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding-top: 70px; /* Espacio para la barra fija */
+            margin: 0;
+        }
+
+        /* BARRA DE NAVEGACIÓN FIJA - VERSIÓN CORREGIDA */
+        .navbar {
+            position: fixed; /* Esto la hace permanecer en su lugar */
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            box-shadow: 0 2px 15px rgba(64, 240, 70, 0.601);
+            z-index: 1000; /* Asegura que esté por encima de todo */
+            height: 70px; /* Altura fija */
+        }
+
+        /* Parte izquierda con logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+        
+        .logo-text {
+            color: white;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        /* Parte derecha con menú */
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 5px;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Efecto subrayado al hover */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: #3498db;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Contenido de ejemplo para probar el scroll */
+        .content {
+            min-height: 2000px; /* Solo para probar el scroll */
+            padding: 30px;
+            background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+/* ===== ESTILOS GENERALES ===== */
+/* Aplica a todo el cuerpo del documento */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: none;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    background: none; /* Sin fondo (se define en otros elementos) */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
 }
 
-.header {
-  position: relative; /* Necesario para contener el parallax */
-  height: 400px; /* Altura fija para el header */
-  overflow: hidden; /* Oculta el exceso de imagen */
-  color: #000000;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.header-text {  
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #000000; /* Color del texto */
-  text-align: center;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.header-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/bici.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Efecto parallax */
-    z-index: -1; /* Para que esté detrás del contenido */
-
-    /* Efecto parallax alternativo para mejor compatibilidad */
-    transform: translateZ(0);
-    will-change: transform;
-  }
-
-.container {
-    max-width: 1200px;
-    margin-top: 0;;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.graficos-section {
-    background: white;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.grafico-card {
-    margin-bottom: 3rem;
-    padding: 1.5rem;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.grafico-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.grafico-card h3 {
-    color: #2c3e50;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 0.5rem;
-    margin-top: 0;
-}
-
-.descripcion {
-    color: #7f8c8d;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-}
-
+/* ===== FILTROS ===== */
+/* Contenedor de controles de filtrado */
 .filtros {
-    margin: 1.5rem 0;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    margin: 1.5rem 0; /* Margen vertical */
+    display: flex; /* Disposición en línea */
+    gap: 1rem; /* Espacio entre elementos */
+    align-items: center; /* Centrado vertical */
 }
 
+/* Estilos para dropdowns y botones */
 select, button {
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
+    padding: 0.6rem 1.2rem; /* Relleno interno */
+    border-radius: 6px; /* Esquinas redondeadas */
+    border: 1px solid #ddd; /* Borde sutil */
+    font-size: 1rem; /* Tamaño de fuente estándar */
 }
 
+/* Estilos específicos para botones */
 button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
+    background-color: #3498db; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor tipo pointer */
+    transition: background 0.3s; /* Transición suave de color */
 }
 
+/* Efecto hover para botones */
 button:hover {
-    background-color: #2980b9;
+    background-color: #2980b9; /* Azul más oscuro */
 }
 
+/* ===== GRÁFICOS (Canvas) ===== */
 canvas {
-    width: 100% !important;
-    height: 400px !important;
-    margin-top: 1rem;
+    width: 100% !important; /* Ancho completo del contenedor */
+    height: 400px !important; /* Altura fija */
+    margin-top: 1rem; /* Espacio superior */
 }
 
+/* ===== PIE DE PÁGINA ===== */
 footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #2c3e50;
-    color: white;
-    margin-top: 2rem;
-}
-
-.intro {
-    background: white;
-    padding: 2rem;
-    margin: 3rem auto;
-    max-width: 1200px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    text-align: justify;
-}
-
-.intro:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border-color: #3498db;
-}
-
-.intro a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px dashed #3498db;
-    transition: all 0.2s;
-}
-
-.intro a:hover {
-    border-bottom-style: solid;
-    color: #2980b9;
-}
-
-
-/* Estilos para la sección de resumen de datos */
-.data-summary {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 2rem auto;
-    width: calc(100% - 2rem); /* Mismo ancho que .graficos-section */
-    max-width: 1200px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e0e0e0;
-}
-
-.summary-container {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #333;
-    padding: 0 1rem;
-}
-
-.record-count {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 6px;
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-    border-left: 4px solid #3498db;
-}
-
-.count-label {
-    font-weight: 600;
-    margin-right: 0.5rem;
-    color: #2c3e50;
-}
-
-.count-value {
-    font-weight: 700;
-    color: #3498db;
-}
-
-.visualization-links {
-    margin: 2rem 0;
-}
-
-.visualization-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 1rem;
-}
-
-.visualization-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed #e0e0e0;
-}
-
-.visualization-list li:last-child {
-    border-bottom: none;
-}
-
-.section-link {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: block;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
-.section-link:hover {
-    background-color: #e8f4fc;
-    color: #3498db;
-    transform: translateX(5px);
-}
-
-.back-to-top {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
+    text-align: center; /* Texto centrado */
+    padding: 1.5rem; /* Relleno interno */
+    background-color: #2c3e50; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    margin-top: 2rem; /* Espacio superior */
 }
