@@ -129,3 +129,35 @@ footer {
     margin-top: 2rem;
 }
 
+.intro {
+    background: white;
+    padding: 2rem;
+    margin: 3rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.intro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #3498db;
+}
+
+.intro a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed #3498db;
+    transition: all 0.2s;
+}
+
+.intro a:hover {
+    border-bottom-style: solid;
+    color: #2980b9;
+}
