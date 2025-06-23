@@ -3,22 +3,46 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
+    background: none;
     color: #333;
     line-height: 1.6;
 }
 
 .header {
+  position: relative; /* Necesario para contener el parallax */
+  height: 300px; /* Altura fija para el header */
+  overflow: hidden; /* Oculta el exceso de imagen */
   color: white;
-  padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative; /* Para que esté sobre el parallax */
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bici.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto parallax */
+    z-index: -1; /* Para que esté detrás del contenido */
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Mejor legibilidad */
+    padding: 2rem;
+    width: 100%;
 }
 
 .container {
     max-width: 1200px;
+    margin-top: 0;;
     margin: 2rem auto;
     padding: 0 1rem;
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
@@ -99,17 +123,3 @@ footer {
     margin-top: 2rem;
 }
 
-/* Contenedor del efecto parallax */
-.parallax-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Para que quede detrás del contenido */
-    background-image: url('../img/bici.webp'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Efecto parallax clave */
-    opacity: 0.5; /* Transparencia para mejor legibilidad */
-}
