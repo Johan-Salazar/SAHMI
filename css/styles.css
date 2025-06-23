@@ -6,15 +6,18 @@
             box-sizing: border-box;
         }
         
-        body {
-            font-family: 'Roboto', sans-serif;
-            padding-top: 70px; /* Espacio para la barra fija */
-            margin: 0;
-        }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 70px; /* Espacio para la barra fija */
+}
 
         /* BARRA DE NAVEGACIÓN FIJA - VERSIÓN CORREGIDA */
-        .navbar {
-            position: fixed; /* Esto la hace permanecer en su lugar */
+        body .navbar {
+            position: fixed !important;/* Esto la hace permanecer en su lugar */
             top: 0;
             left: 0;
             width: 100%;
