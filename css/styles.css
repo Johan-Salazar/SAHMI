@@ -9,11 +9,13 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    color: white;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(44, 62, 80, 0.85); /* Azul oscuro con transparencia */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Para que esté sobre el parallax */
+  z-index: 1;
 }
 
 .container {
@@ -110,5 +112,5 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto parallax clave */
-    opacity: 0.15; /* Transparencia para mejor legibilidad */
+    opacity: 0.5; /* Transparencia para mejor legibilidad */
 }
