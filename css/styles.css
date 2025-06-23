@@ -37,16 +37,6 @@ body {
     will-change: transform;
   }
 
-.header-content {
-    position: relative;
-    z-index: 1;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Mejor legibilidad */
-    padding: 2rem;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejor legibilidad */
-    backdrop-filter: blur(2px); /* Efecto de vidrio esmerilado */
-}
-
 .container {
     max-width: 1200px;
     margin-top: 0;;
