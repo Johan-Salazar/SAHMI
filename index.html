@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAHMI</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- Fuente de Google (similar a la referencia) -->
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +14,6 @@
     </header>
 
     <main class="container">
-        <!-- Sección de gráficos -->
         <section class="graficos-section">
             <h2>Análisis de Datos</h2>
             
@@ -24,33 +21,30 @@
                 <select id="filtro-tiempo">
                     <option value="2023">2023</option>
                     <option value="2022">2022</option>
+                    <!-- Añadir más años si es necesario -->
                 </select>
                 <button id="btn-actualizar">Actualizar</button>
-
-  <script src="./js/script.js"></script>
             </div>
 
-            <!-- Gráfico 1: Líneas -->
             <div class="grafico-card">
                 <h3>Movilidad Mensual</h3>
                 <canvas id="grafico-lineas"></canvas>
+                <p class="descripcion">Número de viajes registrados por mes</p>
             </div>
 
-            <!-- Gráfico 2: Barras -->
             <div class="grafico-card">
                 <h3>Distribución por Región</h3>
                 <canvas id="grafico-barras"></canvas>
+                <p class="descripcion">Porcentaje de viajes por zona geográfica</p>
             </div>
         </section>
     </main>
 
-  <footer>
-    © 2025 | SAHMI - Proyecto académico del IPN | Todos los derechos reservados.
-  </footer>
+    <footer>
+        © 2025 | SAHMI - Proyecto académico del IPN | Todos los derechos reservados.
+    </footer>
 
-  <script src="./js/script.js"></script>
-
-    <!-- Librerías -->
+    <!-- Scripts al final del body (optimización) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/script.js"></script>
 </body>
