@@ -9,7 +9,6 @@ body {
 }
 
 .header {
-  background: rgba(44, 62, 80, 0.85); /* Azul oscuro con transparencia */
   color: white;
   padding: 2rem;
   text-align: center;
