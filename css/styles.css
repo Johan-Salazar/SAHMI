@@ -10,16 +10,17 @@ body {
 
 .header {
   position: relative; /* Necesario para contener el parallax */
-  height: 300px; /* Altura fija para el header */
+  height: 400px; /* Altura fija para el header */
   overflow: hidden; /* Oculta el exceso de imagen */
   color: white;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.header-parallax {
+.header-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +31,11 @@ body {
     background-position: center;
     background-attachment: fixed; /* Efecto parallax */
     z-index: -1; /* Para que esté detrás del contenido */
-}
+
+    /* Efecto parallax alternativo para mejor compatibilidad */
+    transform: translateZ(0);
+    will-change: transform;
+  }
 
 .header-content {
     position: relative;
@@ -38,6 +43,8 @@ body {
     text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Mejor legibilidad */
     padding: 2rem;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejor legibilidad */
+    backdrop-filter: blur(2px); /* Efecto de vidrio esmerilado */
 }
 
 .container {
