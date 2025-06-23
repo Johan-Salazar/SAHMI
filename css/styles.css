@@ -20,6 +20,16 @@ body {
   margin-bottom: 2rem;
 }
 
+.header-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 
+        1px 1px 3px rgba(0, 0, 0, 0.8),
+        0 0 5px rgba(0, 0, 0, 0.5); /* Efecto glow sutil */
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .header-background {
     position: absolute;
     top: 0;
