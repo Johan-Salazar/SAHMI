@@ -1,3 +1,143 @@
-hola, soy SAHMI, un sistema de monitoreo y control de procesos industriales.
-soy capaz de interactuar con dispositivos industriales, recopilar datos en tiempo real y proporcionar una interfaz
-de usuario intuitiva para la visualización y el análisis de datos.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHMI</title>
+    <link rel="icon" href="../SAHMI/img/bicicleta.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding-top: 70px; /* Espacio para la barra fija */
+            margin: 0;
+        }
+
+        /* BARRA DE NAVEGACIÓN FIJA - VERSIÓN CORREGIDA */
+        .navbar {
+            position: fixed; /* Esto la hace permanecer en su lugar */
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Asegura que esté por encima de todo */
+            height: 70px; /* Altura fija */
+        }
+
+        /* Parte izquierda con logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+        
+        .logo-text {
+            color: white;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        /* Parte derecha con menú */
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 5px;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Efecto subrayado al hover */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: #3498db;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Contenido de ejemplo para probar el scroll */
+        .content {
+            min-height: 2000px; /* Solo para probar el scroll */
+            padding: 30px;
+            background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Parte izquierda con logo y nombre -->
+        <div class="logo-container">
+            <img src="../SAHMI/img/bicicleta.png" alt="Logo SAHMI" class="logo-img">
+            <span>SAHMI</span>
+        </div>
+
+        <!-- Parte derecha con enlaces -->
+        <ul class="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./paginas/manual.html">Manual</a></li>
+            <li><a href="./paginas/SAHMI.html">SAHMI</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="header-background"></div> <!-- Contenedor parallax solo para header -->   
+
+        <div class="header-text">
+            <h1>SAHMI</h1>
+            <p>Sistema de Análisis Histórico de Movilidad Individual</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la pagina -->  
+     <div>
+        hola, soy SAHMI, un sistema de monitoreo y control de procesos industriales.
+        Soy capaz de interactuar con dispositivos industriales, recopilar datos en tiempo real y proporcionar una interfaz
+        de usuario intuitiva para la visualización y el análisis de datos.
+     </div>
+</body>
+</html>
