@@ -169,6 +169,7 @@ footer {
     border-radius: 8px;
     padding: 2rem;
     margin: 2rem auto;
+    width: calc(100% - 2rem); /* Mismo ancho que .graficos-section */
     max-width: 1200px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     border: 1px solid #e0e0e0;
@@ -178,6 +179,7 @@ footer {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #333;
+    padding: 0 1rem;
 }
 
 .record-count {
