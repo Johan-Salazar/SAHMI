@@ -113,3 +113,36 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('total-records').textContent = totalRecords.toLocaleString();
     }, 1000);
 });
+
+// Manejo de los enlaces de visualización
+document.querySelectorAll('.section-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Obtener el target del enlace
+        const targetId = this.getAttribute('data-target');
+        
+        // Ocultar todos los contenidos de visualización
+        document.querySelectorAll('.visualization-info').forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        // Mostrar el contenido seleccionado
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+            targetContent.classList.add('active');
+            
+            // Scroll suave hasta el contenido
+            targetContent.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // Resaltar el enlace activo
+        document.querySelectorAll('.section-link').forEach(l => {
+            l.classList.remove('active-link');
+        });
+        this.classList.add('active-link');
+    });
+});
