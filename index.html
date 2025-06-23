@@ -3,53 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHMI</title>
+    <title>SAHMI</title>
     <link rel="icon" href="../SAHMI/img/bicicleta.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* ===== CABECERA ===== */
-/* Contenedor principal del encabezado */
-    .header {
-    position: relative; /* Necesario para posicionar el fondo de forma absoluta */
-    height: 400px; /* Altura fija del encabezado */
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-    color: #000000; /* Color del texto */
-    text-align: center; /* Alineación central del texto */
-    display: flex; /* Usa flexbox para centrar contenido */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    margin-bottom: 2rem; /* Espacio inferior */
-}
-
-/* Texto dentro del encabezado */
-.header-text {  
-    font-size: 1.5rem; /* Tamaño de fuente */
-    font-weight: 300; /* Grosor de fuente (ligera) */
-    color: #000000; /* Color del texto */
-    text-align: center; /* Alineación central */
-    max-width: 80%; /* Ancho máximo para mejor legibilidad */
-    margin: 0 auto; /* Centra el bloque de texto */
-}
-
-/* Fondo de la cabecera con efecto parallax */
-.header-background {
-    position: absolute; /* Posición absoluta respecto al header */
-    top: 0; /* Alineado arriba */
-    left: 0; /* Alineado a la izquierda */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    background-image: url('../img/bici.webp'); /* Imagen de fondo */
-    background-size: cover; /* Cubre todo el espacio disponible */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Efecto parallax (fondo fijo al scroll) */
-    z-index: -1; /* Coloca detrás del contenido */
-
-    /* Optimización para efecto parallax */
-    transform: translateZ(0);
-    will-change: transform;
-}
-
 /* ===== CONTENEDOR PRINCIPAL ===== */
 .container {
     max-width: 1200px; /* Ancho máximo del contenido */
