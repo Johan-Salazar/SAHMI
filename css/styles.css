@@ -200,3 +200,40 @@ footer {
     transform: translateZ(0);
     will-change: transform;
 }
+
+/* ===== SECCIÓN INTRODUCTORIA ===== */
+.intro {
+    background: white; /* Fondo blanco */
+    padding: 2rem; /* Relleno interno */
+    margin: 3rem auto; /* Margen vertical y centrado horizontal */
+    max-width: 1200px; /* Ancho máximo */
+    border-radius: 12px; /* Esquinas muy redondeadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición para efectos hover */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    font-size: 1.1rem; /* Tamaño de fuente aumentado */
+    line-height: 1.7; /* Espaciado entre líneas */
+    text-align: justify; /* Texto justificado */
+}
+
+/* Efecto hover para la sección intro */
+.intro:hover {
+    transform: translateY(-5px); /* Levanta ligeramente */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    border-color: #3498db; /* Borde azul */
+}
+
+/* Enlaces dentro de la intro */
+.intro a {
+    color: #3498db; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 500; /* Grosor de fuente medio */
+    border-bottom: 1px dashed #3498db; /* Subrayado discontinuo */
+    transition: all 0.2s; /* Transición suave */
+}
+
+/* Efecto hover para enlaces */
+.intro a:hover {
+    border-bottom-style: solid; /* Subrayado continuo */
+    color: #2980b9; /* Azul más oscuro */
+}
