@@ -161,3 +161,85 @@ footer {
     border-bottom-style: solid;
     color: #2980b9;
 }
+
+
+/* Estilos para la sección de resumen de datos */
+.data-summary {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.summary-container {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.record-count {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #3498db;
+}
+
+.count-label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: #2c3e50;
+}
+
+.count-value {
+    font-weight: 700;
+    color: #3498db;
+}
+
+.visualization-links {
+    margin: 2rem 0;
+}
+
+.visualization-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.visualization-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.visualization-list li:last-child {
+    border-bottom: none;
+}
+
+.section-link {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.section-link:hover {
+    background-color: #e8f4fc;
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+.back-to-top {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}

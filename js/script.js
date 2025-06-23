@@ -103,3 +103,13 @@ document.getElementById('btn-actualizar').addEventListener('click', () => {
 
 // Carga inicial
 document.addEventListener('DOMContentLoaded', inicializarGraficos);
+
+// Simulación de carga de datos (reemplazar con conexión real a BD)
+document.addEventListener('DOMContentLoaded', function() {
+    // Esto es un ejemplo - deberías reemplazarlo con tu consulta real
+    setTimeout(() => {
+        // Simulando una respuesta de la base de datos
+        const totalRecords = 1_250_683; // Este valor debe venir de tu BD
+        document.getElementById('total-records').textContent = totalRecords.toLocaleString();
+    }, 1000);
+});
