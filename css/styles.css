@@ -12,7 +12,7 @@ body {
   position: relative; /* Necesario para contener el parallax */
   height: 400px; /* Altura fija para el header */
   overflow: hidden; /* Oculta el exceso de imagen */
-  color: #e5ff51;
+  color: #000000;
   text-align: center;
   display: flex;
   align-items: center;
