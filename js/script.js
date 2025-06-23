@@ -25,7 +25,7 @@ function inicializarGraficos() {
         data: {
             labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
             datasets: [{
-                label: `Ventas ${año}`,
+                label: `Viaje ${año}`,
                 data: datosEjemplo.ventasMensuales[año],
                 borderColor: '#6e8efb',
                 tension: 0.1,
