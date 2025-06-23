@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAHMI-DESCRIPCION</title>
+    <title>SAHMI</title>
     <link rel="icon" href="../SAHMI/img/bicicleta.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
             align-items: center;
             background-color: #2c3e50;
             padding: 15px 30px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 15px rgba(64, 240, 70, 0.601);
             z-index: 1000; /* Asegura que esté por encima de todo */
             height: 70px; /* Altura fija */
         }
@@ -133,11 +133,73 @@
         </div>
     </header>
 
-    <!-- Contenido principal de la pagina -->  
-     <div>
-        hola, soy SAHMI, un sistema de monitoreo y control de procesos industriales.
-        Soy capaz de interactuar con dispositivos industriales, recopilar datos en tiempo real y proporcionar una interfaz
-        de usuario intuitiva para la visualización y el análisis de datos.
-     </div>
+        <div class="intro">
+        El Sistema de Análisis Histórico de Movilidad Individual (SAHMI) analiza y visualiza el histórico de los datos abiertos publicados por el Sistema de bicicletas públicas de la Ciudad de México, ECOBICI.  
+
+        Consulte el manual de usuario para mayor entendimiento de las visualizaciones que se presentarán, dando clic aquí.
+    </div>
+
+    <div class="data-summary">
+    <div class="summary-container">
+        <h3>Actualmente, la base de datos cuenta con el siguiente número de registros:</h3>
+        <div class="record-count">
+            <span class="count-label">Número de registros:</span>
+            <span class="count-value" id="total-records">Cargando datos...</span>
+        </div>
+        
+        <div class="visualization-links">
+            <p>Se agrupan y presentan las visualizaciones de la siguiente manera, puede dar clic sobre el texto y lo enviará a la sección correspondiente de esta página:</p>
+            <ul class="visualization-list">
+                <li><a href="#historico" class="section-link">- Histórico</a></li>
+                <li><a href="#pareto" class="section-link">- Gráficos de Pareto</a></li>
+                <li><a href="#cicloestaciones" class="section-link">- Viajes realizados por Cicloestación</a></li>
+                <li><a href="#bicicletas" class="section-link">- Viajes realizados por Bicicleta</a></li>
+                <li><a href="#comparaciones" class="section-link">- Comparaciones</a></li>
+                <li><a href="#viajes-vs-estaciones" class="section-link">- Viajes realizados vs Número de Cicloestaciones</a></li>
+                <li><a href="#viajes-vs-bicicletas" class="section-link">- Viajes realizados vs Número de Bicicletas</a></li>
+                <li><a href="#bicicletas-vs-estaciones" class="section-link">- Número de Bicicletas vs Número de Cicloestaciones</a></li>
+            </ul>
+        </div>
+        
+        <div class="back-to-top">
+            <p>Para regresar a la parte superior de esta página haga clic sobre la palabra "Inicio", que aparece en la parte superior derecha del menú.</p>
+        </div>
+    </div>
+</div>
+
+    <main class="container">
+        <section class="graficos-section">
+            <h2>Análisis de Datos Histórico</h2>
+            
+            <div class="filtros">
+                <select id="filtro-tiempo">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <!-- Añadir más años si es necesario -->
+                </select>
+                <button id="btn-actualizar">Actualizar</button>
+            </div>
+
+            <div class="grafico-card">
+                <h3>Movilidad Mensual</h3>
+                <canvas id="grafico-lineas"></canvas>
+                <p class="descripcion">Número de viajes registrados por mes</p>
+            </div>
+
+            <div class="grafico-card">
+                <h3>Distribución por Región</h3>
+                <canvas id="grafico-barras"></canvas>
+                <p class="descripcion">Porcentaje de viajes por zona geográfica</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 | SAHMI - Proyecto académico del IPN | Todos los derechos reservados.
+    </footer>
+
+    <!-- Scripts al final del body (optimización) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

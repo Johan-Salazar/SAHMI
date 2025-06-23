@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAHMI-MANUAL</title>
+    <title>MANUAL</title>
     <link rel="icon" href="../SAHMI/img/bicicleta.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
             align-items: center;
             background-color: #2c3e50;
             padding: 15px 30px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 15px rgba(64, 240, 70, 0.601);
             z-index: 1000; /* Asegura que esté por encima de todo */
             height: 70px; /* Altura fija */
         }
@@ -133,9 +133,18 @@
         </div>
     </header>
 
-    <!-- Contenido principal de la pagina -->  
-     <div>
-        Hola bienvenido al manual de usuario de la aplicacion
-     </div>
+        <div class="intro">
+        El Sistema de Análisis Histórico de Movilidad Individual (SAHMI) analiza y visualiza el histórico de los datos abiertos publicados por el Sistema de bicicletas públicas de la Ciudad de México, ECOBICI.  
+
+        Consulte el manual de usuario para mayor entendimiento de las visualizaciones que se presentarán, dando clic aquí.
+    </div>
+
+    <footer>
+        © 2025 | SAHMI - Proyecto académico del IPN | Todos los derechos reservados.
+    </footer>
+
+    <!-- Scripts al final del body (optimización) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
