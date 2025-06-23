@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAHMI - Sistema de Análisis Histórico</title>
-  <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHMI - Gráficos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Fuente de Google (similar a la referencia) -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Imagen de fondo con movimiento -->
-  <div class="hero-bg" id="heroBg"></div>
+    <header class="header">
+        <h1>SAHMI</h1>
+        <p>Sistema de Análisis de Datos Masivos</p>
+    </header>
 
-  <!-- Menú de navegación -->
-  <div class="top-menu" id="topMenu">
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#manual">Manual</a></li>
-        <li><a href="#shami">SHAMI</a></li>
-      </ul>
-    </nav>
-  </div>
+    <main class="container">
+        <!-- Sección de gráficos -->
+        <section class="graficos-section">
+            <h2>Análisis de Datos</h2>
+            
+            <div class="filtros">
+                <select id="filtro-tiempo">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+                <button id="btn-actualizar">Actualizar</button>
+  <footer>
+    © 2025 | SAHMI - Proyecto académico del IPN | Todos los derechos reservados.
+  </footer>
 
-  <!-- Sección Hero -->
-  <div class="hero">
-    <h1>SAHMI</h1>
-  </div>
+  <script src="./js/script.js"></script>
+            </div>
 
-  <!-- Contenido principal -->
-  <main>
-    <section id="inicio">
-      <h2>Inicio</h2>
-      <p>Bienvenido al Sistema de Análisis Histórico de Movilidad Individual (SAHMI)...</p>
-      <div class="grafica-placeholder">Aquí va tu imagen o gráfica</div>
-    </section>
+            <!-- Gráfico 1: Líneas -->
+            <div class="grafico-card">
+                <h3>Ventas Mensuales</h3>
+                <canvas id="grafico-lineas"></canvas>
+            </div>
 
-    <section id="manual">
-      <h2>Manual</h2>
-      <p>Consulta las instrucciones de uso de la plataforma SAHMI...</p>
-      <div class="grafica-placeholder">Aquí va tu imagen o gráfica</div>
-    </section>
-
-    <section id="shami">
-      <h2>¿Qué es SAHMI?</h2>
-      <p>SAHMI permite analizar tendencias de movilidad urbana usando datos históricos...</p>
-      <div class="grafica-placeholder">Aquí va tu imagen o gráfica</div>
-    </section>
-  </main>
+            <!-- Gráfico 2: Barras -->
+            <div class="grafico-card">
+                <h3>Distribución por Región</h3>
+                <canvas id="grafico-barras"></canvas>
+            </div>
+        </section>
+    </main>
 
   <footer>
     © 2025 | SAHMI - Proyecto académico del IPN | Todos los derechos reservados.
   </footer>
 
   <script src="./js/script.js"></script>
+
+    <!-- Librerías -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
