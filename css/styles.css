@@ -203,7 +203,7 @@ footer {
 
 /* ===== SECCIÓN INTRODUCTORIA ===== */
 .intro {
-    background: white; /* Fondo blanco */
+    background: white !important; /* Fondo blanco */
     padding: 2rem; /* Relleno interno */
     margin: 3rem auto; /* Margen vertical y centrado horizontal */
     max-width: 1200px; /* Ancho máximo */
