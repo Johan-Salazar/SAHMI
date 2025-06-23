@@ -23,7 +23,7 @@ body {
 .header-text {  
   font-size: 1.5rem;
   font-weight: 300;
-  color: #e5ff51; /* Color del texto */
+  color: #000000; /* Color del texto */
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
