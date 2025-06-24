@@ -1,10 +1,9 @@
-/* BARRA DE NAVEGACION*/
-    /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Reset básico */
+* {     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
         
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,18 +14,18 @@ body {
   padding-top: 70px; /* Espacio para la barra fija */
 }
 
-        /* BARRA DE NAVEGACIÓN FIJA - VERSIÓN CORREGIDA */
-        body .navbar {
-            position: fixed !important;/* Esto la hace permanecer en su lugar */
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #2c3e50;
+/* BARRA DE NAVEGACION*/
+body .navbar {
+    position: fixed !important;/* Esto la hace permanecer en su lugar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
             padding: 15px 30px;
-            box-shadow: 0 2px 15px rgba(64, 240, 70, 0.601);
+            box-shadow: 0 2px 15px rgb(255, 255, 255);
             z-index: 1000; /* Asegura que esté por encima de todo */
             height: 70px; /* Altura fija */
         }
