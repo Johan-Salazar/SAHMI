@@ -146,8 +146,3 @@ document.querySelectorAll('.section-link').forEach(link => {
         this.classList.add('active-link');
     });
 });
-
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
