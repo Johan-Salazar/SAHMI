@@ -25,7 +25,7 @@ body .navbar {
     align-items: center;
     background-color: #000;
     padding: 15px 30px;
-    box-shadow: 0 2px 15px rgb(0, 0, 0);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
     z-index: 1000; /* Asegura que esté por encima de todo */
     height: 70px; /* Altura fija */
 }
