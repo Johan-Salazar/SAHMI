@@ -101,15 +101,7 @@ h1 {
 }
 
 /* ===== ESTILOS GENERALES ===== */
-/* Aplica a todo el cuerpo del documento */
-body {
-    font-family: 'Roboto', sans-serif; /* Fuente principal */
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina rellenos predeterminados */
-    background: none; /* Sin fondo (se define en otros elementos) */
-    color: #333; /* Color de texto principal */
-    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
-}
+
 
 /* ===== FILTROS ===== */
 /* Contenedor de controles de filtrado */
