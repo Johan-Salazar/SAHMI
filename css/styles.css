@@ -36,69 +36,69 @@ body .navbar {
     align-items: center;
 }
         
-        .logo-img {
-            width: 40px;
-            height: 40px;
-            margin-right: 12px;
-        }
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
         
-        .logo-text {
-            color: white;
-            font-weight: 700;
-            font-size: 1.3rem;
-        }
+.logo-text {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
 
-        /* Parte derecha con menú */
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
+/* Parte derecha con menú */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+       
+.nav-links li {
+    margin-left: 30px;
+}
         
-        .nav-links li {
-            margin-left: 30px;
-        }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 5px;
+    position: relative;
+}
         
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            padding: 8px 5px;
-            position: relative;
-        }
+.nav-links a:hover {
+    color: #3498db;
+}
         
-        .nav-links a:hover {
-            color: #3498db;
-        }
+/* Efecto subrayado al hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #3498db;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
         
-        /* Efecto subrayado al hover */
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            background: #3498db;
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s;
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+.nav-links a:hover::after {
+    width: 100%;
+}
 
-        /* Contenido de ejemplo para probar el scroll */
-        .content {
-            min-height: 2000px; /* Solo para probar el scroll */
-            padding: 30px;
-            background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
-        }
+/* Contenido de ejemplo para probar el scroll */
+.content {
+min-height: 2000px; /* Solo para probar el scroll */
+    padding: 30px;
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+}
         
-        h1 {
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
 
 /* ===== ESTILOS GENERALES ===== */
 /* Aplica a todo el cuerpo del documento */
