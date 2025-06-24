@@ -23,7 +23,7 @@ body .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     padding: 15px 30px;
     box-shadow: 0 2px 15px rgb(0, 0, 0);
     z-index: 1000; /* Asegura que esté por encima de todo */
