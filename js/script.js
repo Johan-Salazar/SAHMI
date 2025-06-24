@@ -146,3 +146,12 @@ document.querySelectorAll('.section-link').forEach(link => {
         this.classList.add('active-link');
     });
 });
+
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = '#2c3e50'; // Color al hacer scroll
+    } else {
+        navbar.style.backgroundColor = 'transparent'; // Color inicial
+    }
+});
